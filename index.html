@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Set Sail</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
@@ -352,26 +352,47 @@
     </div>
 
     <div class="container">
-        <div class="slide-vacation">
-            <img src="https://danh-lofi.github.io/SetSail/img/skiing-slider-img-1.jpg" alt="" class="slide-vacation__img">
-            <button class="slide-vacation__btn-left">
-                <
-            </button>
-            <button class="slide-vacation__btn-right">
-                >
-            </button>
-            <div class="slide-vacation__content">
-                <div class="slide-vacation__content-top">
-                    From Alps
+        <div class="slides-vacation__wrap">
+            <input type="radio" name="next" id="preSlide" class="slide-vacation__input">
+            <input type="radio" name="next" id="nextSlide" class="slide-vacation__input">
+            <div class="slides-vacation">
+                <div class="slide-vacation">
+                    <img src="./assets/img/slide-vacation-1.jpg"  alt="" class="slide-vacation__img">
+                    <div class="slide-vacation__content">
+                        <div class="slide-vacation__content-top">
+                        From Alps
+                        </div>
+                    <div class="slide-vacation__content-center">
+                        Snow Adventure
+                    </div>
+                    <div class="slide-vacation__content-bottom">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit. aenean ac interdum nisi. sed in consequat mi
+                    </div>
+                 </div>
                 </div>
-                <div class="slide-vacation__content-center">
-                    Snow Adventure
-                </div>
-                <div class="slide-vacation__content-bottom">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit. aenean ac interdum nisi. sed in consequat mi
+                <div class="slide-vacation">
+                    <img src="./assets/img/slide-vacation-2.jpg" alt="" class="slide-vacation__img">
+                    <div class="slide-vacation__content">
+                        <div class="slide-vacation__content-top">
+                            Enjoy Your
+                    </div>
+                    <div class="slide-vacation__content-center">
+                        Winter Vacations
+                    </div>
+                    <div class="slide-vacation__content-bottom">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit. aenean ac interdum nisi. sed in consequat mi
+                    </div>
                 </div>
             </div>
         </div>
+        <label for="nextSlide" class="slide-vacation__btn-left">
+            <
+        </label>
+        <label for="preSlide" class="slide-vacation__btn-right">
+            >
+        </label>
+        </div>
+        
 
         <div class="slides-active">
             <div class="slides-active__wrap">
