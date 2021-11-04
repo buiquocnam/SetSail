@@ -1,0 +1,121 @@
+:root{
+    --primary-color: #3fd0d4;
+    --white-color: #fff;
+    --black-color: #212121;
+    --text-color: #505050;
+    --border-color: #dbdbdb;
+}
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* hover underline */
+.hover-underline--primary{
+    position: relative;
+    opacity: 1;
+}
+
+.hover-underline--primary::before{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0px;
+    height: 2px;
+    border-radius: 3px;
+    background-color: var(--primary-color);
+    z-index: 1;
+    transition: width linear 0.2s;
+}
+
+.subnav__link{
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 600;
+    color: rgba(0,0,0,0.8);
+    text-decoration: none;
+    color: var(--black-color);
+    padding: 8px 30px;
+    display: flex;
+    transition: color linear 0.2s;
+}
+.header-item--active{color: var(--primary-color);}
+
+.subnav__link:hover .hover-underline--primary::before{
+    width: 100%;
+}
+.subnav__link:hover{
+    color: var(--primary-color);
+}
+
+/* padding nav */
+.padding-item:first-child{
+    padding-top: 20px;
+}
+.padding-item:last-child{
+    padding-bottom: 20px;
+}
+
+
+.header-item__shop{
+    overflow: hidden;
+}
+
+.header-item__shop:hover{
+    overflow: visible;  
+}
+
+@keyframes nextSlide {
+    0%{
+        margin-left:  0;
+    }
+    15%{
+        margin-left:  0;
+    }
+    20%{
+        margin-left:  calc(-12.6% + -2px);
+    }
+    35%{
+        margin-left: calc(-12.6% + -2px);
+    }
+    40%{
+        margin-left: calc(-25.3%);
+    }
+    55%{
+        margin-left: calc(-25.3%);
+    } 
+    60%{
+        margin-left: calc(-12.6% + 2px);
+    } 
+    75%{
+        margin-left: calc(-12.6% + 2px);
+    } 
+    80%{
+        margin-left: 0;
+    } 
+    100%{
+        margin-left: 0;
+    } 
+}
+
+.search-bgr.open{
+    display: flex;
+}
+.modal-menu__container.open{
+    display: block;
+}
+
+.video-modal.open{
+    display: block;
+}
+
+
+
