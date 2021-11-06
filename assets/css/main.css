@@ -167,31 +167,43 @@
     height: 80px;
     display: flex;
     background-color: var(--white-color);
-    position: fixed;
+    position: absolute;;
     inset: 0;
     z-index: 10;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
 
 }
 .header__logo{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 150px;
     height: 80px;
     margin-left: 20px;
 }
+
+.header__logo a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .header__logo-img{
-    height: 40px;
+    height: 48px;
     object-fit: contain;
 }
 
 .header-menu{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     list-style: none;
     flex: 1;
     height: 100%;
     margin: 0;
+    margin-right: 72px;
 }
 
 .header-item{
@@ -673,11 +685,11 @@
     position: fixed;
     inset: 0;
     z-index: 11;
-    display: none;
+    /* display: none; */
 }
 
 .modal-menu{
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
@@ -687,7 +699,7 @@
     background-color: #fff;
     text-align: center;
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
-    
+    transition: 0.5s;
     overflow-y: auto;
     overflow: -moz-scrollbars-none;
     -ms-overflow-style: none;
@@ -816,7 +828,7 @@
 .slide-vacation__img{
     width: 100%;
     height: 100%;
-    animation: scale ease-in-out 5s 4 alternate;
+    animation: scale ease-in-out 5s 8 alternate;
 }
 
 .slide-vacation__content{
@@ -831,6 +843,15 @@
     flex-direction: column;
     cursor: default;
     animation: textUp ease-out 1s;
+
+    /* no can copy text */
+    -moz-user-select: none !important;
+    -webkit-touch-callout: none!important;
+    -webkit-user-select: none!important;
+    -khtml-user-select: none!important;
+    -moz-user-select: none!important;
+    -ms-user-select: none!important;
+    user-select: none!important;
 }
 
 .slide-vacation__content-top{
@@ -1098,7 +1119,7 @@
     max-width: 1100px;
     width: 100%;
     margin: 0 auto;
-    padding-bottom: 130px;
+    padding-bottom: 120px;
 }
 .review-tour__header{
     margin: 100px 0 48px;
@@ -1198,4 +1219,119 @@
     color: var(--white-color);
     background: var(--primary-color);
     cursor: pointer;
+}
+
+/* comment tour */
+.comment-tours{
+    background: url(../img/slide-vacation-2.jpg) no-repeat right top / cover;
+    width: 100%;
+    padding-top: 42%;
+    position: relative;
+}
+
+.comment-tours__content{
+    color: var(--white-color);
+    max-width: 1130px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comment-tours__content-heading{
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+}
+
+.comment-tours__content-title{
+    font-size: 1.7rem;
+    max-width: 540px;
+    line-height: 2.4rem;
+    margin-top: 12px;
+}
+
+.comment-tour-users{
+    position: absolute;
+    top: 44%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    margin-left: -20px;
+}
+
+.comment-tour__user{
+    display: flex;
+    width: calc(calc(100% / 3) - 13px);
+    background: var(--white-color);
+    border-radius: 10px;
+    padding: 40px 36px;
+    height: 230px;
+    margin-left: 20px;
+    flex-shrink: 0;
+}   
+
+.comment-tour__user-avt{
+    flex-shrink: 0;
+    transform: scale(0.8);
+    margin-right: 20px;
+}
+
+.comment-tour__user-wrap{
+}
+
+.comment-tour__user-place{
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-decoration: none;
+    outline: none;
+    color: var(--black-color);
+    display: block;
+    transition: color ease-in-out 0.2s;
+}
+
+.comment-tour__user-place span:hover{
+    color: var(--primary-color);
+}
+
+.comment-tour__user-evaluate{
+    color: var(--primary-color);
+    font-size: 1.4rem;
+}
+
+.comment-tour__user-msg{
+    font-size: 1.4rem;
+    margin-top: 20px;
+}
+
+.comment-tour__user-name{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.comment-tours__btn{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    transform: translateX(-44%);
+    z-index: 2;
+}
+
+.comment-tours__btn-left,
+.comment-tours__btn-center,
+.comment-tours__btn-right{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    margin: 0 8px;
 }

@@ -48,7 +48,7 @@
         </div>
         <ul class="header-menu">
             <li class="header-item header-item__menu">
-                <a href="" class="header-item__link header-item--active"><span class="hover-underline--primary">Menu</span> </a>
+                <a href="" class="header-item__link header-item--active"><span class="hover-underline--primary">Home</span> </a>
                 <ul class="subnav-menu">
                     <li class="subnav-menu__item padding-item">
                         <a href="" class="subnav__link header-item--active"><span class="hover-underline--primary">Travel Agency</span></a>
@@ -680,6 +680,69 @@
                 <a href="" class="review-tour__btn-father"><button class="review-tour__btn">VIEW MORE</button></a>
             </div>
         </div>
+
+        <div class="comment-tours">
+            <div class="comment-tours__content">
+                <div class="comment-tours__content-heading">
+                    Top Reviews
+                </div>
+                <div class="comment-tours__content-title">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+                </div>
+            </div>
+            <div class="comment-tour-users">
+                <div class="comment-tour__user">
+                    <img src="./assets/img/Avatar-user/Sam smith.png" alt="" class="comment-tour__user-avt">
+                    <div class="comment-tour__user-wrap">
+                        <a href="" class="comment-tour__user-place"><span>Marid</span></a>
+                        <div class="comment-tour__user-evaluate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="comment-tour__user-msg"> Pe ator eviuas lwqedit tas, vut et nihc egam yubulas. Ei euvy </div>
+                        <div class="comment-tour__user-name"> Sam Smith</div>
+                    </div>
+                </div>
+                <div class="comment-tour__user">
+                    <img src="./assets/img/Avatar-user/Carl Moore.png" alt="" class="comment-tour__user-avt">
+                    <div class="comment-tour__user-wrap">
+                        <a href="" class="comment-tour__user-place"><span>Temple Tour</span></a>
+                        <div class="comment-tour__user-evaluate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="comment-tour__user-msg"> Pe ator eviuas lwqedit tas, vut et nihc egam yubulas. Ei euvy </div>
+                        <div class="comment-tour__user-name">Carl Moore</div>
+                    </div>
+                </div>
+                <div class="comment-tour__user">
+                    <img src="./assets/img/Avatar-user/Ema Cooper.png" alt="" class="comment-tour__user-avt">
+                    <div class="comment-tour__user-wrap">
+                        <a href="" class="comment-tour__user-place"><span>Holland Canals</span></a>
+                        <div class="comment-tour__user-evaluate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="comment-tour__user-msg">Sa etor aviues lmpedlt tes, vof ef nihc agem qupaios. Ai apvy </div>
+                        <div class="comment-tour__user-name">Ema Cooper</div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment-tours__btn">
+                <label for="" class="comment-tours__btn-left"></label>
+                <label for="" class="comment-tours__btn-center"></label>
+                <label for="" class="comment-tours__btn-right"></label>
+            </div>
+        </div>
     </div>
 
     <footer class="footer">
@@ -696,7 +759,7 @@
         </div>
     </div>
 
-    <div class="modal-menu__container">
+    <!-- <div class="modal-menu__container"> -->
         <div class="modal-menu">
             <div class="menu-logo">
                 <img src="./assets/img/logo.png" alt="" class="menu-logo__img">
@@ -728,10 +791,33 @@
                     <i class="fas fa-times"></i>
             </div>
         </div>
-    </div>
+    <!-- </div> -->
 
 
     <script>
+        
+        var headerAbso = document.querySelector('.header')
+        window.addEventListener('scroll',function(){
+            var scroll = window.scrollY;
+            console.log(scroll)
+            // headerAbso.style.top="-30px"
+            if (scroll>200){
+                headerAbso.style.top="-45px"
+            }
+                else{
+                    headerAbso.style.top="0"
+                }
+
+            if (scroll>=700){
+                headerAbso.classList.add('header-fixed'),
+               headerAbso.style.top="0";
+            }
+            else {
+                headerAbso.classList.remove('header-fixed')
+            }
+            
+        });
+
         var header = document.querySelector('.header-search');
         var headerSearch = document.querySelector('.search-bgr');
         var headerClose = document.querySelector('.search-btn')
@@ -756,28 +842,52 @@
             event.stopPropagation()
         } )
 
+        // Modal Menu
         var headerBars = document.querySelector('.header-bars');
         var modalMenuContainer = document.querySelector('.modal-menu__container');
         var menuClose = document.querySelector('.menu-close');
         var modalMenu = document.querySelector('.modal-menu');
 
+        modalMenu.style.right="-485px";
+
         headerBars.addEventListener('click',function(){
-            modalMenuContainer.classList.add('open')
+            if (modalMenu.style.right="-485px"){
+                modalMenu.style.right="0";
+            }
         })
 
         menuClose.addEventListener('click',function(){
-            modalMenuContainer.classList.remove('open')
-        })
-        
-        modalMenuContainer.addEventListener('click',function(){
-            modalMenuContainer.classList.remove('open')
+            if (modalMenu.style.right="0"){
+                modalMenu.style.right="-485px";
+            }
         })
 
-        modalMenu.addEventListener('click',function(event){
+        var body =document.querySelector('body');
+        var header = document.querySelector('.header')
+
+        body.addEventListener('click',function(){
+            modalMenu.style.right="-485px";
+        })
+        header.addEventListener('click',function(event){
             event.stopPropagation()
         })
+        // headerBars.addEventListener('click',function(){
+        //     modalMenuContainer.classList.add('open')
+        // })
+
+        // menuClose.addEventListener('click',function(){
+        //     modalMenuContainer.classList.remove('open')
+        // })
         
+        // modalMenuContainer.addEventListener('click',function(){
+        //     modalMenuContainer.classList.remove('open')
+        // })
+
+        // modalMenu.addEventListener('click',function(event){
+        //     event.stopPropagation()
+        // })
         
+        // Play/Pause Video
         var reviewTourImg = document.querySelector('.img-video')
         var videoModal = document.querySelector('.video-modal')
         var video = document.querySelector('.video-modal__video')
@@ -795,7 +905,6 @@
             event.stopPropagation()
         })
 
-        // video.pause();
         videoModal.addEventListener('click', function(){
             if (video.play())
             video.pause()
