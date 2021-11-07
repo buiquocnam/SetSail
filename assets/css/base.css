@@ -4,6 +4,8 @@
     --black-color: #212121;
     --text-color: #505050;
     --border-color: #dbdbdb;
+    --text-blur-color: #555050;
+    --footer-color: #a9a9a9;
 }
 *{
     box-sizing: inherit;
@@ -17,6 +19,29 @@ html{
     overflow-x: hidden;
 }
 
+.row-1200{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row-1130{
+    max-width: 1130px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row-535{
+    max-width: 535px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row-185{
+    max-width: 185px;
+    width: 100%;
+    margin: 0 auto;
+}
 /* hover underline */
 .hover-underline--primary{
     position: relative;

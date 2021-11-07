@@ -1178,6 +1178,7 @@
     font-size: 1.2rem;
     background-color: var(--primary-color);
     color: var(--white-color);
+    cursor: pointer;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1334,4 +1335,353 @@
     border-radius: 50%;
     background-color: var(--primary-color);
     margin: 0 8px;
+}
+
+/* Enjoy your vacation */
+.enjoy-vacation{
+    max-width: 535px;
+    padding: 140px 0 68px;
+    text-align: center;
+}
+.enjoy-vacation__tagline{
+    font-size: 3.3em;
+    font-family: Satisfy,cursive;
+    color: var(--primary-color);
+}
+.enjoy-vacation__title{
+    font-size: 6.5rem;
+}
+.enjoy-vacation__text{
+    font-size: 1.7rem;
+    line-height: 2.8rem;
+    color: var(--text-blur-color);
+}
+
+/* Choose activity */
+.choose-activity{
+    display: flex;
+    text-align: center;
+    padding-bottom: 160px;
+}
+
+.choose-activity__place{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--black-color);
+    padding-top: 28px;
+}
+.choose-activity__text{
+    font-size: 1.4rem;
+    color: var(--text-blur-color);
+    margin-top: 12px;
+    line-height: 2.2rem;
+}
+
+/* Team coach */
+.team-coach{
+    display: flex;
+    max-height: 476px;
+}
+.coach{
+    width: 25%;
+    overflow: hidden;
+    position: relative;
+}
+
+.coach-img{
+    max-width: 100%;
+}
+
+.coach:hover .coach-content{
+    height: 168px;
+}
+
+.coach-content{
+    position: absolute;
+    bottom: 0;
+    height: 168px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+    cursor: default;
+    height: 0;
+    transition: height  ease-in-out 0.4s;
+}
+
+.coach-content__name{
+    font-size: 1.8rem;
+}
+
+.coach-content__msg{
+    width: 85%;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    text-align: center;
+    margin: 0 auto;
+}   
+
+.coach-content__navigation{
+    font-size: 1.8rem;
+    margin-top: 18px;
+}
+
+.coach-content__navigation-icon{
+    color: var(--white-color);
+    margin: 0 12px;
+}
+
+.coach-content__navigation-icon:hover{
+    cursor: pointer;
+    color: var(--primary-color);
+    filter: brightness(80%);
+}
+
+/* information */
+.information{
+    background-color: var(--primary-color);
+    filter: brightness(92%);
+    max-height: 248px;
+}
+.information-wrap{
+    display: flex;
+    justify-content: space-around;
+}
+.row-1130{
+
+}
+.information-statistical{
+    max-width: 252px;
+    text-align: center;
+    color: var(--white-color);
+    padding: 50px 0;
+    
+}
+.information-statistical__quantity{
+    font-size: 6.5rem;
+}
+.information-statistical__title{
+    font-size: 1.8rem;
+}
+
+
+.enjoy-vacation.enjoy-vacation--padding{
+    padding:100px 0 0 0;
+}
+
+/* location */
+.location{
+    display: flex;
+    margin-bottom: 80px;
+}
+.row-1130{
+
+}
+.location-wrap{
+    width: calc(100% / 3);
+    padding: 40px;
+    position: relative;
+}
+
+.location-wrap__img{
+    max-width: 100%;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.5);
+    filter: brightness(80%);
+}
+
+.location-wrap__text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--white-color);
+    font-family: Satisfy,cursive;
+    font-size: 4.8rem;
+    margin: 0;
+    font-weight: 100;
+}
+.location.row-1130{
+
+}
+
+
+/* footer top */
+.footer{
+    background-color: var(--black-color);
+    padding: 100px 80px 0;
+}
+
+.footer-top{
+   display: flex;
+}
+
+.footer-wrap{
+    width: calc(100% / 4);
+    padding: 0 15px;
+}
+
+.footer-logo{
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.footer-wrap__tagline{
+    color: var(--footer-color);
+    font-weight: 300;
+    font-size: 1.7rem;
+    margin-top: 0;
+    margin-bottom: 28px;
+    line-height: 2.4rem;
+}
+
+.footer-contact{
+    color: var(--white-color);
+    font-size: 1.4rem;
+}
+
+.footer-contact__icon{
+    margin-right: 14px;
+}
+
+.footer-contact__link:nth-child(3) .footer-contact__icon{
+    width: 1.4rem;
+}
+
+.footer-contact__link{
+    margin-bottom: 12px;
+    color: var(--white-color);
+    text-decoration: none;
+    outline: none;
+    display: block;
+    transition:  0.1s linear;
+}
+
+.footer-contact__link:hover{
+    color: var(--primary-color);
+}
+
+.footer-post{
+    color: var(--white-color);
+}
+.footer-post__heading{
+    font-size: 1.8rem;
+    margin: 0;
+}
+.footer-post__place-link{
+    font-size: 1.4rem;
+    color: var(--footer-color);
+    text-decoration: none;
+    outline: none;
+    display: block;
+    margin-top: 30px;
+    transition: 0.1s linear;
+
+}
+.footer-post__time-link{
+    font-size: 1.4rem;
+    text-decoration: none;
+    display: block;
+    outline: none;
+    color: var(--white-color);
+    margin-top: 12px;
+    transition: 0.1s linear;
+}
+
+.footer-post__place-link:hover,
+.footer-post__time-link:hover{
+    color: var(--primary-color);
+}
+
+.footer-subscribe__heading{
+    margin: 0 0 24px;
+    font-size: 1.8rem;
+    color: var(--white-color)
+}
+
+.footer-subscribe__title{
+    color: var(--footer-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    margin: 10px 0 35px;
+}
+
+.footer-subscribe__input{
+    flex: 1;
+}
+
+.footer-subscribe__input-name,
+.footer-subscribe__input-mail{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 12px 14px;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: var(--white-color);
+    /* background-color: #595959; */
+}
+
+.footer-subscribe__input-btn{
+    width: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    padding: 14px 42px;
+    font-size: 1.4rem;
+    color: var(--white-color);
+    font-weight: bold;
+    transition: 0.1s linear;
+}
+
+.footer-subscribe__input-btn:hover{
+    background-color: var(--white-color);
+    color: var(--black-color);
+    cursor: pointer;
+}
+
+.footer-ins{
+}
+
+.footer-ins__heading{
+    margin: 0;
+    font-size: 1.8rem;
+    color: var(--white-color);
+}
+
+.footer-ins__title{
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    color: var(--footer-color);
+    margin-top: 24px;
+}
+
+
+/* footer bottom */
+.footer-bottom{
+    margin-top: 100px;
+    padding: 30px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.footer-bottom span{
+    color: var(--footer-color);
+}
+
+.footer-bottom__link{
+    color: var(--white-color);
+    text-decoration: none;
+    outline: none;
+    padding: 12px 0;
+}
+
+.footer-bottom__link:hover{
+    color: var(--primary-color);
 }
