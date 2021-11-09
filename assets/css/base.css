@@ -19,25 +19,31 @@ html{
     overflow-x: hidden;
 }
 
-.row-1200{
-    max-width: 1200px;
-    width: 100%;
+.grid-1200{
+    width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
-.row-1130{
-    max-width: 1130px;
-    width: 100%;
+.grid-1130{
+    width: 1130px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
-.row-535{
-    max-width: 535px;
-    width: 100%;
+.grid-1100{
+    width: 1100px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
-.row-185{
+.grid-535{
+    width: 535px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid-185{
     max-width: 185px;
     width: 100%;
     margin: 0 auto;
