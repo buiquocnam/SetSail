@@ -1324,7 +1324,7 @@
     text-align: center;
 }
 .enjoy-vacation__tagline{
-    font-size: 3.3em;
+    font-size: 5.3em;
     font-family: Satisfy,cursive;
     color: var(--primary-color);
 }
@@ -1508,8 +1508,7 @@
 }
 
 .footer-wrap{
-    width: calc(100% / 4);
-    padding: 0 15px;
+    
 }
 
 .footer-logo{

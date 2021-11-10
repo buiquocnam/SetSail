@@ -80,7 +80,7 @@
 @media (max-width: 63.9375em) {
     .header {
         height: 68px;
-        display: none;
+        /* display: none; */
     }
 
     .container {
@@ -115,6 +115,22 @@
 
     .choose-activity__wrap{
         margin-bottom: 52px;
+    }
+
+    .team-coach__row{
+        width: 200%;
+        flex-wrap: nowrap;
+    }
+    .team-coach{
+        margin-bottom: -6px;
+    }
+
+    .location-wrap__text{
+        font-size: 3.8rem;
+    }
+    
+    .footer-wrap{
+        margin-bottom: 62px;
     }
 }
 
