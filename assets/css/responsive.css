@@ -80,6 +80,7 @@
 @media (max-width: 63.9375em) {
     .header {
         height: 68px;
+        display: none;
     }
 
     .container {
