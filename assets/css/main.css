@@ -819,7 +819,6 @@
 }
 
 .slide-vacation{
-    width: 100%;
     height: 420px;
     position: relative;
     overflow: hidden;
@@ -829,6 +828,7 @@
     width: 100%;
     height: 100%;
     animation: scale ease-in-out 5s 8 alternate;
+    object-fit: cover;
 }
 
 .slide-vacation__content{
@@ -864,11 +864,8 @@
 }
 
 .slide-vacation__content-center{
-    /* position: absolute;
-    top: 50%;
-    transform: translateY(-50%); */
     font-size: 11.8rem;
-    line-height: 11.8rem;
+    line-height: 15.8rem;
     font-weight: 600;
     display: block;
     color: var(--white-color);
@@ -949,20 +946,16 @@
 .slides-active__wrap{
     width: 200%;
     display: flex;
-    margin-right: -10px;
+    flex-wrap: nowrap !important;
     margin-top: 10px;
-    /* flex-wrap: wrap; */
     margin-bottom: 30px;
 }
 .slide-active{
-    --column: 4;
-    width: calc(calc(100vw / var(--column)) - 10px);
-    margin-right: 10px;
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
     overflow: hidden;
 }
 .slide-active__first{
-    animation: nextSlide ease-in-out 30s infinite;
+    /* animation: nextSlide ease-in-out 30s infinite; */
 }
 .slide-active__header{
     display: flex;
@@ -979,6 +972,7 @@
     width: 100%;
     height: 100%;
     transition:  transform linear 0.25s;
+    object-fit: cover;
 }
 .slide-active__place{
     background-color: var(--primary-color);
@@ -1088,7 +1082,7 @@
     transition: margin ease-in-out 0.8s;
 }
 #radio2:checked ~ .slide-active__first{
-    margin-left: calc(-25% - 10px);
+    margin-left: calc(-16.6667% - 12px);
     transition: margin ease-in-out 0.8s;
 }
 
@@ -1115,11 +1109,9 @@
 }
 
 /* review */
-.review-tour{
-    padding-bottom: 120px;
-}
+
 .review-tour__header{
-    margin: 100px 0 48px;
+    margin: 156px 0 48px;
     text-align: center;
 }
 .review-tour__tagline{
@@ -1196,7 +1188,7 @@
 .review-tour__text{
     margin-top: 38px;
     font-size: 1.4rem;
-    color: #828282;
+    color: var(--text-blur-color);
     display: block;
     text-align: center;
     line-height: 2.2rem;
@@ -1223,18 +1215,19 @@
 .comment-tours{
     background: url(../img/slide-vacation-2.jpg) no-repeat right top / cover;
     width: 100%;
-    padding-top: 42%;
     position: relative;
+    padding: 100px 0;
+}
+
+.comment-tours__content-row{
+    align-items: center;
+    justify-content: center;
 }
 
 .comment-tours__content{
     color: var(--white-color);
     text-align: center;
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 80px;
+    margin: 80px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1247,34 +1240,27 @@
 
 .comment-tours__content-title{
     font-size: 1.7rem;
-    max-width: 540px;
-    line-height: 2.4rem;
-    margin-top: 12px;
+    width: 50%;
+    line-height: 2.5rem;
+    margin: 12px auto 0;
 }
 
 .comment-tour-users{
-    position: absolute;
-    top: 44%;
-    left: 0;
-    width: 100%;
     display: flex;
-    margin-left: -20px;
+    flex-wrap: nowrap !important;
 }
 
 .comment-tour__user{
     display: flex;
-    width: calc(calc(100% / 3) - 13px);
     background: var(--white-color);
     border-radius: 10px;
     padding: 40px 36px;
     height: 230px;
-    margin-left: 20px;
     flex-shrink: 0;
 }   
 
 .comment-tour__user-avt{
     flex-shrink: 0;
-    transform: scale(0.8);
     margin-right: 20px;
 }
 
@@ -1334,8 +1320,7 @@
 
 /* Enjoy your vacation */
 .enjoy-vacation{
-    max-width: 535px;
-    padding: 140px 0 68px;
+    padding: 140px 0 68px !important;
     text-align: center;
 }
 .enjoy-vacation__tagline{
@@ -1347,9 +1332,11 @@
     font-size: 6.5rem;
 }
 .enjoy-vacation__text{
+    width: 65%;
     font-size: 1.7rem;
     line-height: 2.8rem;
     color: var(--text-blur-color);
+    margin: 0 auto;
 }
 
 /* Choose activity */
@@ -1357,6 +1344,11 @@
     display: flex;
     text-align: center;
     padding-bottom: 160px;
+}
+
+.choose-activity__row{
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 .choose-activity__place{
@@ -1374,11 +1366,9 @@
 
 /* Team coach */
 .team-coach{
-    display: flex;
-    max-height: 476px;
+    margin-bottom: -2px;
 }
 .coach{
-    width: 25%;
     overflow: hidden;
     position: relative;
 }
@@ -1439,17 +1429,20 @@
 .information{
     background-color: var(--primary-color);
     filter: brightness(92%);
-    max-height: 248px;
+    min-height: 248px;
 }
 .information-wrap{
     display: flex;
     justify-content: space-around;
 }
-.row-1130{
 
+.information-wrap__row{
+    width: 100%;
+    justify-content: space-evenly;
 }
+
 .information-statistical{
-    max-width: 252px;
+    min-width: 252px;
     text-align: center;
     color: var(--white-color);
     padding: 50px 0;

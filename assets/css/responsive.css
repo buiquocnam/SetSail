@@ -1,0 +1,129 @@
+/* Mobile */
+@media (max-width: 46.1875em) {
+    .slide-vacation__content-top{
+        font-size: 3.4rem;
+    }
+    .slide-vacation__content-center{
+        font-size: 3.5rem;
+        line-height: 9.8rem;
+    }
+    .slide-vacation__content-bottom{
+        font-size: 1.5rem;
+        width: 65%;
+    }
+
+    
+    .review-tour__tagline{
+        font-size: 3.3rem;
+    }
+    .review-tour__heading{
+        font-size: 3.5rem;
+        font-weight: 600;
+    }
+    
+
+    .comment-tours__content-heading{
+        font-size: 3.5rem;
+    }
+    .comment-tours__content-title{
+        font-size: 1.7rem;
+    }
+
+    .enjoy-vacation__title{
+        font-size: 3.5rem;
+    }
+
+    
+    .choose-activity__text{
+        width: 65%;
+        margin: 12px auto;
+    }
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .slide-vacation__content-center{
+        font-size: 8.2rem;
+    }
+    .slide-vacation__content-bottom{
+        font-size: 1.7rem;
+        width: 65%;
+    }
+    .slide-vacation__btn-left{
+        width: 25px;
+        height: 25px;
+        font-size: 2.5rem;
+        left: 1%;
+    }
+    .slide-vacation__btn-right{
+        width: 25px;
+        height: 25px;
+        font-size: 2.5rem;
+        right: 1%;
+    }
+    #radio2:checked ~ .slide-active__first{
+        margin-left: calc(-25% - 12px);
+        transition: margin ease-in-out 0.8s;
+    }
+
+
+    .review-tour__heading{
+        font-size: 5.8rem;
+    }
+
+    .enjoy-vacation__title{
+        font-size: 5.8rem;
+    }
+}
+
+/* Mobile and Tablet  */
+@media (max-width: 63.9375em) {
+    .header {
+        height: 68px;
+    }
+
+    .container {
+        margin-top: 68px;
+    }
+
+    .review-tour{
+        padding: 32px 32px 140px;
+    }
+    .review-tour__content{
+        width: auto;
+    }
+
+    .comment-tours__content{
+        margin: 0;
+    }
+    .comment-tours__content-title{
+        width: 80%;
+        margin-bottom: 32px;
+    }
+    .comment-tour__user{
+        display: block;
+        height: auto;
+        text-align: center;
+    }
+    .comment-tour__user-avt{
+        margin-right: 0;
+    }
+    .comment-tour__user-place{
+        margin-top: 12px;
+    }
+
+    .choose-activity__wrap{
+        margin-bottom: 52px;
+    }
+}
+
+/* PC */
+@media (min-width: 64em) {
+    .comment-tour__user-avt {
+        transform: scale(0.8);
+    }
+
+    .review-tour{
+        padding: 32px 32px 140px;  
+    }
+}

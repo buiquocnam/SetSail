@@ -7,7 +7,7 @@
     --text-blur-color: #555050;
     --footer-color: #a9a9a9;
 }
-*{
+*{  
     box-sizing: inherit;
 }
 
@@ -19,35 +19,6 @@ html{
     overflow-x: hidden;
 }
 
-.grid-1200{
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.grid-1130{
-    width: 1130px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.grid-1100{
-    width: 1100px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.grid-535{
-    width: 535px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.grid-185{
-    max-width: 185px;
-    width: 100%;
-    margin: 0 auto;
-}
 /* hover underline */
 .hover-underline--primary{
     position: relative;
@@ -112,10 +83,10 @@ html{
         margin-left:  0;
     }
     20%{
-        margin-left:  calc(-12.6% + -2px);
+        margin-left:  calc(-16.6667% + 12px);
     }
     35%{
-        margin-left: calc(-12.6% + -2px);
+        margin-left: calc(-16.6667% + 12px);
     }
     40%{
         margin-left: calc(-25.3%);
