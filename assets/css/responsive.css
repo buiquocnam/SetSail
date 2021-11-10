@@ -132,6 +132,13 @@
     .footer-wrap{
         margin-bottom: 62px;
     }
+
+    .header-menu{
+        flex-direction: column;
+    }
+    .subnav-menu{
+        position: initial;
+    }
 }
 
 /* PC */
