@@ -11,7 +11,7 @@
     box-sizing: inherit;
 }
 
-html{
+html,body{
     font-size: 62.5%;
     line-height: 1.6rem;
     font-family: 'Poppins', sans-serif;
