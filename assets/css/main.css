@@ -281,6 +281,14 @@
     opacity: 1;
 }
 
+
+.header-mobile__menu-bgr{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+}
+
 /* subnav page */
 /* .header-item:hover .subnav-pages{display: block;} */
 .subnav-pages{
@@ -947,7 +955,7 @@
     width: 200%;
     display: flex;
     flex-wrap: nowrap !important;
-    margin-top: 10px;
+    margin-top: 24px;
     margin-bottom: 30px;
     margin: 10px 0 30px 0;
 }
@@ -1083,7 +1091,7 @@
     transition: margin ease-in-out 0.8s;
 }
 #radio2:checked ~ .slide-active__first{
-    margin-left: calc(-16.6667% - 12px);
+    margin-left: calc(-16.6667% );
     transition: margin ease-in-out 0.8s;
 }
 
@@ -1347,6 +1355,14 @@
     padding-bottom: 160px;
 }
 
+.choose-activity__img{
+    transform: translateY(0);
+    transition: 0.2s;
+}
+.choose-activity__img:hover {
+    transform: translateY(-10px);
+}
+
 .choose-activity__row{
     width: 100%;
     justify-content: space-evenly;
@@ -1367,7 +1383,7 @@
 
 /* Team coach */
 .team-coach{
-    margin-bottom: -2px;
+    margin-bottom: -6px;
 }
 .coach{
     overflow: hidden;
